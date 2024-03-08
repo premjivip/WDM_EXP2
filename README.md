@@ -1,5 +1,5 @@
 ### EX2 Generating Association Rules for Employee dataset using Apriori Algorithm
-### DATE: 
+### DATE: 17/02/2024
 ### AIM: To generate associate rules for the employee dataset using Apriori Algorithm.
 ### Description:
 In data mining, association rule learning is a popular and well researched method for discovering interesting
@@ -10,7 +10,6 @@ Creation of Buying Table:
 ### Procedure:
 1) Open Start -> Programs -> Accessories -> Notepad
 2) Type the following training data set with the help of Notepad for Buying Table.
-
 ```
 @relation buying
 @attribute age {L20,20-40,G40}
@@ -35,6 +34,48 @@ G40,high,yes,excellent,no
 L20,medium,yes,fair,yes
 G40,high,yes,excellent,yes
 ```
+```
+@relation bank
+@attribute cust {male,female} 
+@attribute accno {0101,0102,0103,0104,0105,0106,0107,0108,0109,0110,0111,0112,0113,0114,0115}
+@attribute bankname {sbi,hdfc,sbh,ab,rbi} 
+@attribute location {hyd,jmd,antp,pdtr,kdp} 
+@attribute deposit {yes,no}
+@data 
+male,0101,sbi,hyd,yes 
+female,0102,hdfc,jmd,no 
+male,0103,sbh,antp,yes 
+male,0104,ab,pdtr,yes 
+female,0105,sbi,jmd,no 
+male,0106,ab,hyd,yes 
+female,0107,rbi,jmd,yes 
+female,0108,hdfc,kdp,no 
+male,0109,sbh,kdp,yes 
+male,0110,ab,jmd,no 
+female,0111,rbi,kdp,yes 
+male,0112,sbi,jmd,yes 
+female,0113,rbi,antp,no 
+male,0114,hdfc,pdtr,yes 
+female,0115,sbh,pdtr,no
+```
+```
+@relation employee-1
+@attribute age {youth, middle, senior} 
+@attribute income {high, medium, low} 
+@attribute class {A, B, C}
+@data
+youth, high, A 
+youth,medium,B 
+youth, low, C 
+middle, low, C 
+middle, medium, C 
+middle, high, A 
+senior, low, C 
+senior, medium, B 
+senior, high, B 
+middle, high, B
+```
+
 3) After that the file is saved with .arff file format.
 4) Minimize the arff file and then open Start -> Programs -> weka-3-4.
 5) Click on weka-3-4, then Weka dialog box is displayed on the screen.
@@ -42,8 +83,12 @@ G40,high,yes,excellent,yes
 7) Explorer shows many options. In that click on ‘open file’ and select the arff file
 8) Click on edit button which shows buying table on weka.
 ### OUTPUT:
-
-
+### BUYING DATASET:
+![image](https://github.com/premjivip/WDM_EXP2/assets/143831886/c9360f1a-1b78-405f-9eb5-f7234a1a2c9f)
+#### BANKING DATASET:
+![image](https://github.com/premjivip/WDM_EXP2/assets/143831886/4fd64c62-358c-47ed-b024-05ddde16ea3b)
+#### EMPLOYEE DATASET:
+![image](https://github.com/premjivip/WDM_EXP2/assets/143831886/119a56f9-4c13-4947-965d-60c3f14eb370)
 ### Procedure for Association Rules:
 1) Open Start -> Programs -> Accessories -> Notepad
 2) Open explorer.
@@ -53,5 +98,11 @@ G40,high,yes,excellent,yes
 6) Click on Start button and output will be displayed on the right side of the window.
 
 ### OUTPUT:
-
+### BUYING DATASET:
+![image](https://github.com/premjivip/WDM_EXP2/assets/143831886/65bfbc64-d07f-452c-9001-9eda8900fb77)
+#### BANKING DATASET:
+![image](https://github.com/premjivip/WDM_EXP2/assets/143831886/7e7fdd61-1a9d-41b5-b9ac-376b5008079a)
+#### EMPLOYEE DATASET:
+![image](https://github.com/premjivip/WDM_EXP2/assets/143831886/b26c5cc3-9ffb-4dff-befb-87f85bc537b9)
 ### RESULT: 
+Thus the program has been successfully executed.
